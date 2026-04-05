@@ -1,0 +1,134 @@
+/* KICU Brand Fonts — must be before @import "tailwindcss" */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&family=Plus+Jakarta+Sans:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+/* KICU Brand Colours — Vision Bold Palette */
+@theme {
+  --color-primary: #157DEC;
+  --color-primary-dark: #1266c4;
+  --color-secondary: #D4F419;
+  --color-accent: #E89928;
+  --color-bg-light: #FEF7EB;
+  --color-bg-soft: #E4D6EA;
+  --color-text: #1A1A2E;
+  --color-text-muted: #6B7280;
+  --color-success: #16A34A;
+  --color-warning: #D97706;
+  --color-error: #DC2626;
+
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-logo: 'Outfit', system-ui, sans-serif;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Spark glow animation */
+@keyframes spark-glow {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px #D4F419) drop-shadow(0 0 15px #D4F419); }
+  50% { opacity: 0.8; filter: drop-shadow(0 0 3px #D4F419) drop-shadow(0 0 8px #D4F419); }
+}
+
+.spark {
+  display: inline-block;
+  color: var(--color-secondary);
+  transform: rotate(20deg);
+  animation: spark-glow 2.5s ease-in-out infinite;
+}
+
+/* Fade-in on scroll */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Phone mockup */
+.phone-frame {
+  background: #1A1A2E;
+  border-radius: 2.5rem;
+  padding: 0.75rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.phone-frame img {
+  border-radius: 2rem;
+  width: 100%;
+  display: block;
+}
+
+/* FAQ accordion */
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-chevron {
+  transition: transform 0.2s ease;
+}
+
+/* Category card hover spark */
+.category-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card::after {
+  content: '✦';
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  font-size: 0.75rem;
+  color: var(--color-secondary);
+  opacity: 0;
+  transform: rotate(20deg) scale(0.5);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  filter: drop-shadow(0 0 4px #D4F419);
+}
+
+.category-card:hover::after {
+  opacity: 1;
+  transform: rotate(20deg) scale(1);
+}
+
+/* CTA button spark */
+@keyframes sparkle-btn {
+  0%, 100% { opacity: 0.6; transform: rotate(20deg) scale(0.8); }
+  50% { opacity: 1; transform: rotate(20deg) scale(1.1); }
+}
+
+.btn-spark {
+  display: inline-block;
+  color: var(--color-secondary);
+  animation: sparkle-btn 1.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 4px #D4F419);
+}

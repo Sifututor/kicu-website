@@ -1,0 +1,384 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <!-- ============ NAVBAR ============ -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-1">
+        <span class="font-logo text-2xl font-extrabold tracking-[3px] text-primary">
+          KICU<span class="spark text-lg align-super">&#10022;</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#features" class="text-sm font-medium text-text-muted hover:text-primary transition-colors">Features</a>
+        <a href="#how-it-works" class="text-sm font-medium text-text-muted hover:text-primary transition-colors">How It Works</a>
+        <a href="#testimonials" class="text-sm font-medium text-text-muted hover:text-primary transition-colors">Testimonials</a>
+        <a href="#faq" class="text-sm font-medium text-text-muted hover:text-primary transition-colors">FAQ</a>
+      </div>
+
+      <!-- CTA Button -->
+      <a href="#download" class="bg-primary hover:bg-primary-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors">
+        Download App <span class="btn-spark text-xs">&#10022;</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-b from-white to-bg-light overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+        <!-- Text -->
+        <div class="flex-1 text-center md:text-left">
+          <div class="mb-5">
+            <span class="inline-flex items-center gap-2 bg-secondary/20 text-text font-medium text-sm px-4 py-1.5 rounded-full">
+              <span class="spark text-base">&#10022;</span>
+              Malaysian Tax Relief Tracker
+            </span>
+          </div>
+          <div class="relative inline-block mb-6">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+              Your Tax<br/>
+              <span class="text-primary">Sidekick</span>
+            </h1>
+            <!-- Hero Spark Burst -->
+            <span class="spark absolute -top-3 right-0 sm:-top-4 sm:-right-2 text-xl sm:text-2xl lg:text-3xl" style="animation-delay: 0s;">&#10022;</span>
+            <span class="spark absolute top-1 -right-5 sm:-right-8 text-xs sm:text-sm opacity-50" style="animation-delay: 1.2s;">&#10022;</span>
+            <span class="spark absolute bottom-2 -right-3 sm:-right-6 text-sm sm:text-base opacity-70" style="animation-delay: 0.6s;">&#10022;</span>
+          </div>
+          <p class="text-lg sm:text-xl text-text-muted max-w-lg mb-8 mx-auto md:mx-0">
+            Track Malaysian tax relief receipts, maximize your claims, and file with confidence. All in one app.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a href="#download" class="bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-3.5 rounded-full text-lg transition-colors shadow-lg shadow-primary/25">
+              Download App <span class="btn-spark">&#10022;</span>
+            </a>
+            <a href="#features" class="border-2 border-gray-200 hover:border-primary text-text font-semibold px-8 py-3.5 rounded-full text-lg transition-colors">
+              See Features
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone Mockup -->
+        <div class="flex-shrink-0 w-64 sm:w-72 md:w-80">
+          <div class="phone-frame">
+            <img src="/images/screen-home.png" alt="KICU app home screen showing tax savings tracker" width="320" height="693" loading="eager" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES SECTION ============ -->
+  <section id="features" class="py-20 md:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+          Everything you need to <span class="text-primary">save on taxes</span>
+        </h2>
+        <p class="text-lg text-text-muted max-w-2xl mx-auto">
+          KICU makes tax tracking feel effortless — no jargon, no spreadsheets, just snap and save.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16">
+        <!-- Feature 1: Snap -->
+        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+          <div class="flex-shrink-0 w-44 sm:w-48">
+            <div class="phone-frame">
+              <img src="/images/screen-receipt.png" alt="Receipt scanning screen" width="200" height="433" loading="lazy" />
+            </div>
+          </div>
+          <div class="text-center sm:text-left">
+            <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 mx-auto sm:mx-0">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Snap & Track Receipts</h3>
+            <p class="text-text-muted">Snap a photo of your receipt — KICU reads it automatically and sorts it into the right LHDN tax category.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2: Guide -->
+        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+          <div class="flex-shrink-0 w-44 sm:w-48">
+            <div class="phone-frame">
+              <img src="/images/screen-guide.png" alt="Tax relief guide screen" width="200" height="433" loading="lazy" />
+            </div>
+          </div>
+          <div class="text-center sm:text-left">
+            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center mb-4 mx-auto sm:mx-0">
+              <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Tax Relief Guide</h3>
+            <p class="text-text-muted">Browse all 16 LHDN relief categories with limits, tips, and what you can claim. No tax knowledge needed.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3: Track -->
+        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+          <div class="flex-shrink-0 w-44 sm:w-48">
+            <div class="phone-frame">
+              <img src="/images/screen-track.png" alt="Progress tracking screen" width="200" height="433" loading="lazy" />
+            </div>
+          </div>
+          <div class="text-center sm:text-left">
+            <div class="w-12 h-12 bg-success/10 rounded-2xl flex items-center justify-center mb-4 mx-auto sm:mx-0">
+              <svg class="w-6 h-6 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Track Your Savings</h3>
+            <p class="text-text-muted">See your total claims at a glance. Track progress across every category and know exactly how much you're saving.</p>
+          </div>
+        </div>
+
+        <!-- Feature 4: Export -->
+        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+          <div class="flex-shrink-0 w-44 sm:w-48">
+            <div class="phone-frame">
+              <img src="/images/screen-profile.png" alt="Profile and export screen" width="200" height="433" loading="lazy" />
+            </div>
+          </div>
+          <div class="text-center sm:text-left">
+            <div class="w-12 h-12 bg-bg-soft rounded-2xl flex items-center justify-center mb-4 mx-auto sm:mx-0">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Export & File</h3>
+            <p class="text-text-muted">When filing season arrives, export your tax data as PDF or CSV. Everything's organized and ready to go.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section id="how-it-works" class="py-20 md:py-28 bg-bg-light">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+          How it works
+        </h2>
+        <p class="text-lg text-text-muted max-w-2xl mx-auto">
+          Three simple steps. That's all it takes.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 md:gap-12">
+        <!-- Step 1 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-primary/25">
+            1
+          </div>
+          <h3 class="text-xl font-bold mb-3">Snap</h3>
+          <p class="text-text-muted">Take a photo of any receipt — from your morning coffee to your gym membership.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-accent/25">
+            2
+          </div>
+          <h3 class="text-xl font-bold mb-3">Sort</h3>
+          <p class="text-text-muted">KICU reads your receipt with AI and automatically categorizes it into the right LHDN relief category.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-success text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg shadow-success/25">
+            3
+          </div>
+          <h3 class="text-xl font-bold mb-3">Save</h3>
+          <p class="text-text-muted">Watch your tax savings grow throughout the year. When filing time comes, you're already ready.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="testimonials" class="py-20 md:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+          What <span class="text-primary">Malaysians</span> are saying
+        </h2>
+        <p class="text-lg text-text-muted max-w-2xl mx-auto">
+          Real people, real tax savings. Here's how KICU is helping Malaysians keep more of their money.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-bg-light rounded-2xl p-6 md:p-8 relative">
+          <div class="flex items-center gap-1 mb-4">
+            <span class="text-accent text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+          <p class="text-text mb-6 leading-relaxed">"I used to throw receipts in a drawer and panic during tax season. Now I just snap and forget — KICU sorts everything for me. Claimed RM6,200 extra last year!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">AF</div>
+            <div>
+              <p class="font-semibold text-sm">Aisha F.</p>
+              <p class="text-text-muted text-xs">Marketing Manager, KL</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-bg-light rounded-2xl p-6 md:p-8 relative">
+          <div class="flex items-center gap-1 mb-4">
+            <span class="text-accent text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+          <p class="text-text mb-6 leading-relaxed">"Best part — the tax guide. I didn't even know I could claim my gym membership and internet bill. KICU taught me more about tax relief than 10 years of working."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent font-bold text-sm">DL</div>
+            <div>
+              <p class="font-semibold text-sm">Daniel L.</p>
+              <p class="text-text-muted text-xs">Software Engineer, Penang</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-bg-light rounded-2xl p-6 md:p-8 relative">
+          <div class="flex items-center gap-1 mb-4">
+            <span class="text-accent text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+          <p class="text-text mb-6 leading-relaxed">"As a freelancer, tracking receipts was a nightmare. KICU made it so simple — just snap, and it knows which category. The export feature saved me hours during filing."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-success/10 flex items-center justify-center text-success font-bold text-sm">NR</div>
+            <div>
+              <p class="font-semibold text-sm">Nurul R.</p>
+              <p class="text-text-muted text-xs">Freelance Designer, JB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="py-20 md:py-28 bg-bg-light">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+          Frequently asked questions
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        <details class="bg-white rounded-2xl p-6 shadow-sm" open>
+          <summary class="flex items-center justify-between font-semibold text-lg">
+            Is KICU free?
+            <svg class="faq-chevron w-5 h-5 text-text-muted flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-text-muted">Yes! KICU is completely free to use. All features — receipt scanning, tax guide, tracking, and exporting — are included at no cost.</p>
+        </details>
+
+        <details class="bg-white rounded-2xl p-6 shadow-sm">
+          <summary class="flex items-center justify-between font-semibold text-lg">
+            What tax year does KICU support?
+            <svg class="faq-chevron w-5 h-5 text-text-muted flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-text-muted">KICU currently supports Year of Assessment (YA) 2025 with all 16 LHDN tax relief categories and their latest limits.</p>
+        </details>
+
+        <details class="bg-white rounded-2xl p-6 shadow-sm">
+          <summary class="flex items-center justify-between font-semibold text-lg">
+            Is my data safe?
+            <svg class="faq-chevron w-5 h-5 text-text-muted flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-text-muted">Your receipts and tax data are stored securely on your device. KICU doesn't share your financial information with anyone.</p>
+        </details>
+
+        <details class="bg-white rounded-2xl p-6 shadow-sm">
+          <summary class="flex items-center justify-between font-semibold text-lg">
+            When will KICU be available?
+            <svg class="faq-chevron w-5 h-5 text-text-muted flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-text-muted">KICU is launching soon on both the App Store (iOS) and Google Play Store (Android). Stay tuned!</p>
+        </details>
+
+        <details class="bg-white rounded-2xl p-6 shadow-sm">
+          <summary class="flex items-center justify-between font-semibold text-lg">
+            Do I need to understand taxes to use KICU?
+            <svg class="faq-chevron w-5 h-5 text-text-muted flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-text-muted">Not at all! KICU guides you through everything. Just snap your receipts and the app handles the categorization, limits, and tracking for you.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EARLY ACCESS CTA ============ -->
+  <section id="download" class="py-20 md:py-28 bg-primary relative overflow-hidden">
+    <!-- Decorative sparks -->
+    <div class="absolute top-8 left-12 text-secondary/30 text-4xl spark">&#10022;</div>
+    <div class="absolute bottom-12 right-16 text-secondary/30 text-5xl spark" style="animation-delay: 0.8s;">&#10022;</div>
+    <div class="absolute top-1/2 right-1/4 text-secondary/20 text-3xl spark" style="animation-delay: 1.5s;">&#10022;</div>
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+        Ready to take control of your tax savings?
+      </h2>
+      <p class="text-lg text-white/80 mb-10 max-w-xl mx-auto">
+        KICU is coming soon to both iOS and Android. Be among the first to download when we launch.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#" class="inline-flex items-center gap-3 bg-white text-primary font-bold px-8 py-4 rounded-full text-lg hover:bg-gray-50 transition-colors shadow-xl">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          App Store
+        </a>
+        <a href="#" class="inline-flex items-center gap-3 bg-white text-primary font-bold px-8 py-4 rounded-full text-lg hover:bg-gray-50 transition-colors shadow-xl">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.09 12l2.608-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.635z"/></svg>
+          Google Play
+        </a>
+      </div>
+      <p class="mt-4 text-white/60 text-sm">Coming soon to iOS & Android</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="py-12 bg-text">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <!-- Logo -->
+        <div class="flex items-center gap-1">
+          <span class="font-logo text-xl font-extrabold tracking-[3px] text-white">
+            KICU<span class="spark text-sm align-super">&#10022;</span>
+          </span>
+        </div>
+
+        <!-- Links -->
+        <div class="flex items-center gap-6 text-sm text-gray-400">
+          <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+
+        <!-- Made in Malaysia -->
+        <p class="text-sm text-gray-400">
+          Made with &#10084;&#65039; in Malaysia &#127474;&#127486;
+        </p>
+      </div>
+    </div>
+  </footer>
+</Layout>
